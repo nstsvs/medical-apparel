@@ -19,17 +19,21 @@
     width: auto;
 }
 
-.header__nav {
-    display: none;
+.header__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    background: rgba(3, 94, 163);
+    transform: translateX(100%);
+    transition: transform 0.5s;
+    z-index: 1;
 }
 
-.header__menu {
-    display: none;
-    flex-direction: column;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.header__menu.active {
+    transform: translateX(0);
 }
 
 .header__menu--list {
@@ -38,28 +42,61 @@
     font-family: "Roboto", sans-serif;
     font-size: 18px;
     gap: 20px;
+    list-style: none;
 }
 
-.header__menu-item a {
+.header__menu--item a {
     text-decoration: none;
     font-family: "Roboto", sans-serif;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: 800;
     color: #000;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
-.header__burger {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+.header__burger-btn {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
     border: none;
     background: none;
     cursor: pointer;
+    z-index: 2;
 }
 
 .header__burger-line {
-    width: 25px;
-    height: 2px;
+    width: 30px;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
     background-color: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.header__burger-btn .header__burger-line:nth-of-type(2) {
+    top: calc(50% - 9px);
+}
+.header__burger-btn .header__burger-line:nth-of-type(3) {
+    top: calc(50% + 9px);
+}
+
+.header__burger-btn.active .header__burger-line:nth-of-type(1) {
+    display: none;
+}
+.header__burger-btn.active .header__burger-line:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);
+}
+.header__burger-btn.active .header__burger-line:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg);
 }
 
 /* DESKTOP */
@@ -72,14 +109,15 @@
         height: 40px;
     }
 
-    .header__nav {
+    .header__menu {
         display: flex;
+        margin-left: 60px;
     }
 
     .header__menu {
         display: flex;
         flex-direction: row;
-        gap: 40px;
+        gap: 56px;
         margin-left: 70px;
     }
 
@@ -89,8 +127,12 @@
         font-size: 20px;
     }
 
-    .header__menu-item a {
-        font-size: 18px;
+    .header__menu--item a {
+        font-size: 20px;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     .header__burger {

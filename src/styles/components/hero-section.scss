@@ -41,11 +41,9 @@
     margin-top: 20px;
     cursor: pointer;
     max-width: 300px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
 
     &:hover {
-        opacity: 0.5;
-        transform: scale(1.05);
+        opacity: 0.8;
     }
 }
 
