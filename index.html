@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kaяclin Lab</title>
-  <link rel="stylesheet" crossorigin href="./index-COT4vaWt.css">
-</head>
-<body>
-<header class="header">
-    <div class="header__container">
-        <img src="./logo.svg" alt="Логотип" class="header__logo" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kaяclin Lab</title>
+      <link rel="stylesheet" crossorigin href="./index-BLdUsS2m.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__container">
+                <img src="./logo.svg" alt="Логотип" class="header__logo" />
 
-        <!-- Mobile burger-menu -->
-        <button class="header__burger" id="burger" aria-label="Открыть меню">
-            <span class="header__burger-line"></span>
-            <span class="header__burger-line"></span>
-            <span class="header__burger-line"></span>
-        </button>
+                <!-- Mobile burger-menu -->
+                <button class="header__burger-btn" id="burger-btn" aria-label="Открыть меню">
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                </button>
 
-        <nav class="header__nav">
-            <ul class="header__menu--list">
-                <li class="header__menu--item"><a href="#">О нас</a></li>
-                <li class="header__menu--item"><a href="#">Каталог</a></li>
-                <li class="header__menu--item"><a href="#">Контакты</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-<main>
-    <section class="hero-section">
-        <div class="hero-section__content">
-            <div class="hero-section__header">
-                <p class="hero-section__title">
-                    Собственное производство KаясlinLAB&nbsp;&mdash; это выбор для тех, кто ценит комфорт и&nbsp;стиль в&nbsp;рабочей одежде.
-                </p>
-                <button class="hero-section__button">Открыть каталог</button>
+                <nav class="header__menu" id="burger-menu">
+                    <ul class="header__menu--list">
+                        <li class="header__menu--item"><a href="#">О нас</a></li>
+                        <li class="header__menu--item"><a href="#">Каталог</a></li>
+                        <li class="header__menu--item"><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="hero-image">
-                <img class="hero-section__image" src="./hero.webp" alt="Девушка в медицинском халате" />
-            </div>
-        </div>
-    </section>
-</main>
+        </header>
 
-</body>
+        <main>
+            <section class="hero-section">
+                <div class="hero-section__content">
+                    <div class="hero-section__header">
+                        <p class="hero-section__title">
+                            Собственное производство KаясlinLAB&nbsp;&mdash; это выбор для тех, кто ценит комфорт и&nbsp;стиль в&nbsp;рабочей одежде.
+                        </p>
+                        <button class="hero-section__button">Открыть каталог</button>
+                    </div>
+                    <div class="hero-image">
+                        <img class="hero-section__image" src="./hero.webp" alt="Девушка в медицинском халате" />
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+
+<script src="src/scripts/burger-menu.js"></script>
 </html>
