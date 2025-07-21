@@ -4,8 +4,11 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Kaяclin Lab</title>
-      <script type="module" crossorigin src="./index-CbHQqMhx.js"></script>
-      <link rel="stylesheet" crossorigin href="./index-D8X5FSWg.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      <script type="module" crossorigin src="./index-BaGTqPuk.js"></script>
+      <link rel="stylesheet" crossorigin href="./index-DkhWDHKv.css">
     </head>
     <body>
         <header class="header">
@@ -21,14 +24,13 @@
 
                 <nav class="header__menu" id="burger-menu">
                     <ul class="header__menu--list">
-                        <li class="header__menu--item"><a href="#">О нас</a></li>
+                        <li class="header__menu--item"><a href="#about">О нас</a></li>
                         <li class="header__menu--item"><a href="#">Каталог</a></li>
                         <li class="header__menu--item"><a href="#">Контакты</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-
         <main>
             <section class="hero-section">
                 <div class="hero-section__content">
@@ -43,8 +45,79 @@
                     </div>
                 </div>
             </section>
-            .<p></p>
+            <section class="about-section" id="about">
+                <hr>
+                <h1 class="about-section__title mobile">НАШЕ ПРОИЗВОДСТВО</h1>
+                <div class="about-section__content">
+                    <div class="slider-container">
+                        <div class="slides" id="slides">
+                            <div class="slide"><img src="./slide1-DJ1jXcJz.webp" alt="1" /></div>
+                            <div class="slide"><img src="./slide2-B-y2OJcb.webp" alt="2" /></div>
+                            <div class="slide"><img src="./slide3-DxQY0Smc.webp" alt="3" /></div>
+                            <div class="slide"><img src="./slide4-DqWUsu2l.webp" alt="4" /></div>
+                            <div class="slide"><img src="./slide5-BELINZBi.webp" alt="5" /></div>
+                            <div class="slide"><img src="./slide6-DaUpToPR.webp" alt="6" /></div>
+                        </div>
+
+                        <div class="nav-buttons">
+                            <div class="arrow" id="prev"><span>&larr;</span></div>
+                            <div class="arrow" id="next"><span>&rarr;</span></div>
+                        </div>
+                    </div>
+                    <div class="about-section__text-wrapper">
+                        <h1 class="about-section__title desktop">НАШЕ ПРОИЗВОДСТВО</h1>
+
+                        <p class="about-section__text">
+                            Большой швейный цех, современное оборудование, дизайнеры, технологи, закройщики в&nbsp;штате.
+                            Используем только лёгкие, качественные, дышащие, хлопкосодержащие, слабомнущиеся ткани,
+                            с&nbsp;водоотталкивающей пропиткой, которые соответствуют ГОСТ.
+                            Работаем в&nbsp;системе маркировки &laquo;Честный знак&raquo;, что подтверждает Российское производство и&nbsp;качество нашей продукции.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="who-section">
+                <h2 class="who-section__title">НАШИ ИЗДЕЛИЯ ПОДОЙДУТ ДЛЯ:</h2>
+                <p class="who-section__text">Мы создаём продукцию, которая отвечает требованиям профессионалов. Наши изделия выбирают:</p>
+                <div class="container">
+                    <div class="card">
+                        <h3>Медицина и здравоохранение</h3>
+                        <ul>
+                            <li>Сотрудники медицинских лабораторий</li>
+                            <li>Врачи и персонал поликлиник, больниц, частных клиник</li>
+                            <li>Стоматологи</li>
+                            <li>Студенты медицинских вузов</li>
+                            <li>Сотрудники реабилитационных центров</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>Ветеринария</h3>
+                        <ul>
+                            <li>Врачи ветеринарных клиник</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>Индустрия красоты и ухода</h3>
+                        <ul>
+                            <li>Косметологи</li>
+                            <li>Массажисты</li>
+                            <li>Специалисты салонов депиляции</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>Прочие сферы</h3>
+                        <ul>
+                            <li>Фармацевты</li>
+                            <li>Повара</li>
+                            <li>Домохозяйки</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </main>
-
+
     </body>
 </html>
